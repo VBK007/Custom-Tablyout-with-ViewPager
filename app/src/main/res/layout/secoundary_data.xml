@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius=".1in"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <pl.droidsonroids.gif.GifImageView
+           android:id="@+id/secoundary_Image"
+           android:layout_width="match_parent"
+           android:src="@mipmap/ic_launcher"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/cartoon_name"
+           android:text="carttom_network"
+           android:textSize="18sp"
+           android:textColor="@color/black"
+           android:layout_margin="5dp"
+           android:layout_gravity="center_horizontal"
+           />
+
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>

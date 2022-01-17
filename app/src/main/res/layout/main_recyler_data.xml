@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    app:cardElevation="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="120dp"
+          android:background="@color/cardview_shadow_start_color"
+          android:orientation="horizontal"
+          android:id="@+id/main_Recycler_data"
+          >
+
+          <pl.droidsonroids.gif.GifImageView
+              android:id="@+id/main_Imageview"
+              android:layout_width="150dp"
+              android:src="@mipmap/ic_launcher"
+              android:layout_height="match_parent"
+              android:layout_margin="5dp"
+              />
+
+          <TextView
+              android:id="@+id/cartoon_name_first"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginBottom="30dp"
+              android:fontFamily="@font/aclonica"
+              android:text="Cartoon Network"
+              android:textSize="22sp"
+              android:textStyle="italic" />
+
+
+      </LinearLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+          app:spanCount="3"
+          android:orientation="vertical"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="5dp"
+          android:id="@+id/main_secoundary_recycler"
+          />
+  </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
